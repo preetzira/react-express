@@ -1,0 +1,123 @@
+li {
+  position: relative!important;
+  max-width: fit-content;
+  margin: auto;
+  cursor: pointer;
+}
+
+li > .tooltip {
+  position: absolute!important;
+  font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: normal;
+  line-height: 1.42857143;
+  text-align: left;
+  text-align: start;
+  text-shadow: none;
+  text-transform: none;
+  white-space: normal;
+  word-break: normal;
+  word-spacing: normal;
+  word-wrap: normal;
+  font-size: 12px;
+  pointer-events: none;
+  z-index: 1;
+  opacity: 0;
+  transition: .5s ease-in;
+}
+
+li:hover > .tooltip{
+  opacity: 1;
+  transition: .5s ease-in;
+}
+
+li > .tooltip.right {
+  top:25%;
+  left:100%;
+  margin-left: 5px;
+  width: 60%;
+}
+
+li > .tooltip.left {
+  top:25%;
+  right: 100%;
+  margin-right: 5px;
+  width: 60%;
+}
+
+li > .tooltip.top {
+  bottom: 100%;
+  left: 20%;
+  margin: auto;
+  margin-bottom: 5px;
+  width: 60%;
+}
+
+li > .tooltip.bottom {
+  top: 100%;
+  left: 20%;
+  margin: auto;
+  margin-top: 5px;
+  width: 60%;
+}
+
+li > .tooltip .tooltip-arrow {
+  top: 50%;
+  left: 0;
+  margin-top: -5px;
+  border-width: 5px 5px 5px 0;
+  border-right-color: #2196F3;
+}
+
+li > .tooltip.right .tooltip-arrow {
+  top: 50%;
+  left: auto;
+  margin-left: -5px;
+  border-width: 5px 5px 5px 0;
+  border-right-color: #2196F3;
+}
+
+li > .tooltip.top .tooltip-arrow {
+  top: auto;
+  bottom: -5px;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px 5px 0;
+  border-top-color: #2196F3;
+}
+
+li > .tooltip.left .tooltip-arrow {
+  top: 50%;
+  margin-top: -5px;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #2196F3;
+  right: -5px;
+  left: auto;
+}
+
+li > .tooltip.bottom .tooltip-arrow {
+  top: 0;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 0 5px 5px;
+  border-bottom-color: #2196F3;
+}
+
+li > .tooltip .tooltip-arrow {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-right-color: transparent;
+  border-style: solid;
+}
+
+li > .tooltip .tooltip-label {
+  max-width: 200px;
+  padding: 3px 8px;
+  color: #fff;
+  text-align: center;
+  background-color: #2196F3;
+  border-radius: 4px;
+}
